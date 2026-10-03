@@ -1,0 +1,4 @@
+#alert udp any any -> any 6513 (msg:"O1 Interface UDP Flood - T-SMO-03"; threshold: type both, track by_dst, count 100, seconds 1; sid:1000001; rev:1;)
+#alert tcp any any -> any 6513 (msg:"ORAN_T-SMO TLS handshake flood detected"; flow:to_server; content:"|16 03|"; depth:2; threshold:type threshold, track by_src, count 100, seconds 5; classtype:attempted-dos; sid:1000002; rev:1;)
+#alert icmp any any -> any any (msg:"ORAN_T-SMO ICMP flood detected"; itype:8; threshold:type threshold, track by_src, count 100, seconds 5; classtype:attempted-dos; sid:1000003; rev:1;)
+alert icmp 172.21.0.4 any -> 172.21.0.7 any (msg:"ORAN T-SMO-03 ICMP flood on O1 interface O-DU"; itype:8;  dsize:>1000; threshold: type threshold, track by_src, count 100, seconds 1; classtype:attempted-dos;sid:1000003;rev:1;)
