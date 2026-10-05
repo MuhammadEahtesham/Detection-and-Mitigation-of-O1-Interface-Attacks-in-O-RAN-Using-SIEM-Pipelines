@@ -52,3 +52,11 @@ Research_Seminar_English.pdf
 Confirmation_Form.pdf
 O-RAN.WG11.TR.SMO-Security-Analysis.0-R005-v08.00.docx
 
+
+# Upstream O-RAN stack and generated captures — not part of this repo
+captures/
+oam/
+smo/
+o1-ofhmp-interfaces/
+ntsim-master/
+wazuh-docker/
