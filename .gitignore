@@ -1,0 +1,54 @@
+# Packet captures — too large for GitHub, environment-specific
+*.pcap
+*.pcapng
+*.pcap.*
+
+# Ignore network simulators and wazuh
+ntsim-master/
+wazuh-docker/
+
+# Extracted feature data
+*.csv
+!example-*.csv          # keep small example CSVs if you add any
+
+# Logs
+*.log
+eve.json
+
+# Secrets — never commit credentials or env files
+*.env
+.env
+secrets.*
+*-credentials.*
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Docker volumes / local data
+data/
+volumes/
+
+# Upstream O-RAN SC OAM stack — not part of this project, contains credentials
+oam/
+smo/
+**/.env
+**/*.env
+*.bak
+
+# Ignore pdfs
+Research_Seminar_Deutsch.pdf
+Research_Seminar_English.pdf
+Confirmation_Form.pdf
+O-RAN.WG11.TR.SMO-Security-Analysis.0-R005-v08.00.docx
+

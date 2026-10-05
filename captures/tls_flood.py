@@ -16,4 +16,3 @@ def worker():
 for _ in range(THREADS):
     threading.Thread(target=worker, daemon=True).start()
 time.sleep(DURATION)
-
