@@ -187,7 +187,10 @@ alert icmp $HOME_NET any -> $HOME_NET any (msg:"ORAN T-SMO-03 ICMP flood on O1";
 ## 👤 Author
 
 **Muhammad Eahtesham** — M.Sc. Computer Science, TU Ilmenau
-Supervisor: *Manasik Hassan* · Chair: *Prof. Dr.-Ing. habil. Andreas Mitschele-Thiel* (RCSE)
+
+Supervisor: *Manasik Hassan* 
+
+Chair: *Prof. Dr.-Ing. habil. Andreas Mitschele-Thiel* (RCSE)
 
 <div align="center">
 
